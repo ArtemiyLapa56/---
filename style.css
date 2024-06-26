@@ -1,0 +1,134 @@
+.xom-banner {
+    background: linear-gradient(45deg, #000000, #000000);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    animation: gradientAnimation 10s ease alternate infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  
+  .content {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .content__title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    animation: shake 0.5s infinite alternate;
+  }
+  
+  @keyframes shake {
+    from {
+      transform: rotate(-5deg);
+    }
+    to {
+      transform: rotate(5deg);
+    }
+  }
+  
+  .content__data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .news-item__description {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .news-item__description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .footer {
+    background: linear-gradient(to right, #141515, #0f1011);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .banner {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .scrolling-text span {
+    margin-right: 8px;
+  }
+
+  a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Оставляем цвет по умолчанию */
+}
+
+p {
+    color: #333;
+}
+
+h1{
+    color: #333;
+}
+
+li{
+    color: #333;
+}
+
+h3{
+    color: #333;
+}
